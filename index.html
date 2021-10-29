@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Meme Generator</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="memes-basic.js"></script>
+    <script src="app.js"></script>
+    <style>
+      #output {
+        position: relative;
+        color: pink;
+      }
+      #output img {
+        width: 500px;
+      }
+      #output div {
+        font-family: Impact;
+        position: absolute;
+        text-align: center;
+        width: 500px;
+        font-size: 36px;
+        color: white;
+        text-shadow:
+          -2px -2px 0px black,
+          -2px 2px 0px black,
+          2px -2px 0px black,
+          2px 2px 0px black
+          ;
+      }
+      .top {
+        top: 1em;
+      }
+      .bottom {
+        bottom: 1em;
+      }
+      #meme-templates {
+        height: 50vh;
+        overflow-y: scroll;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="text-align: center; position: absolute; width: 100%">
+      hello world
+    </h1>
+    <form id="input">
+      input
+      <ul id="meme-templates">
+      </ul>
+    </form>
+    <div id="output">
+    </div>
+  </body>
+</html>
